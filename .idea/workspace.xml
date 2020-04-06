@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="412b6712-52ea-4f78-8b19-cbbc04cb236d" name="Default Changelist" comment="" />
+    <list default="true" id="412b6712-52ea-4f78-8b19-cbbc04cb236d" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../cw_flash_photolysis/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../cw_flash_photolysis/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,7 +21,7 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../cw_flash_photolysis" />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/attenuation_modeling.py" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../cw_flash_photolysis/attenuation_modeling.py" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="JupyterTrust" id="9ee63e28-f74e-45a0-9d91-5b47e3d4ac57">
     <option name="files">
@@ -28,6 +30,7 @@
     </option>
   </component>
   <component name="ProjectId" id="1ZfPtPs7X9wy6pj0Im7bf755hrS" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -307,12 +310,24 @@
       <workItem from="1585666549376" duration="25611000" />
       <workItem from="1585828389884" duration="3767000" />
       <workItem from="1585839160605" duration="267000" />
-      <workItem from="1585839474575" duration="6147000" />
+      <workItem from="1585839474575" duration="6395000" />
     </task>
+    <task id="LOCAL-00001" summary="new_project">
+      <created>1586174151372</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1586174151373</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="new_project" />
+    <option name="LAST_COMMIT_MESSAGE" value="new_project" />
   </component>
   <component name="WindowStateProjectService">
     <state x="330" y="211" width="800" height="684" key="#Python" timestamp="1585234403446">
@@ -323,6 +338,10 @@
       <screen x="35" y="27" width="1885" height="1053" />
     </state>
     <state x="193" y="185" width="1084" height="709" key="#com.intellij.execution.impl.EditConfigurationsDialog/35.27.1885.1053/1920.0.1920.1080@35.27.1885.1053" timestamp="1585228487886" />
+    <state x="2498" y="142" width="754" height="803" key="CommitChangelistDialog2" timestamp="1586174151225">
+      <screen x="1920" y="0" width="1920" height="1080" />
+    </state>
+    <state x="2498" y="142" width="754" height="803" key="CommitChangelistDialog2/35.27.1885.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1586174151225" />
     <state x="2412" y="295" width="424" height="517" key="FileChooserDialogImpl" timestamp="1586174108897">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
@@ -353,10 +372,10 @@
     </state>
     <state x="530" y="83" width="977" height="737" key="SettingsEditor/35.27.1885.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1585839636022" />
     <state x="497" y="186" width="977" height="737" key="SettingsEditor/35.27.1885.1053/1920.0.1920.1080@35.27.1885.1053" timestamp="1585264587210" />
-    <state x="2475" y="276" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1586174126779">
+    <state x="2475" y="276" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1586174167531">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2475" y="276" width="800" height="535" key="Vcs.Push.Dialog.v2/35.27.1885.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1586174126779" />
+    <state x="2475" y="276" width="800" height="535" key="Vcs.Push.Dialog.v2/35.27.1885.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1586174167531" />
     <state x="735" y="401" width="474" height="311" key="cloudConfig.SelfSettingsDialog" timestamp="1585587843278">
       <screen x="35" y="27" width="1885" height="1053" />
     </state>
