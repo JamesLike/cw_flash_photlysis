@@ -3,6 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="412b6712-52ea-4f78-8b19-cbbc04cb236d" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/../cw_flash_photolysis/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../cw_flash_photolysis/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cw_flash_photolysis/attenuation_modeling_PAR2.py" beforeDir="false" afterPath="$PROJECT_DIR$/../cw_flash_photolysis/attenuation_modeling_PAR2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cw_flash_photolysis/attenuation_modeling_funcs2.py" beforeDir="false" afterPath="$PROJECT_DIR$/../cw_flash_photolysis/attenuation_modeling_funcs2.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cw_flash_photolysis/attuation_fitting.py" beforeDir="false" afterPath="$PROJECT_DIR$/../cw_flash_photolysis/attuation_fitting.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../cw_flash_photolysis/laser_heating.py" beforeDir="false" afterPath="$PROJECT_DIR$/../cw_flash_photolysis/laser_heating.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +51,7 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.attuation_fitting">
+  <component name="RunManager" selected="Python.attenuation_modeling_PAR2 (1)">
     <configuration default="true" type="DjangoTestsConfigurationType">
       <module name="cw_flash_photolysis" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -138,20 +142,17 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="attenuation_modeling_PAR2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="attenuation_modeling_PAR2 (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="cw_flash_photolysis" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../cw_flash_photolysis" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/attenuation_modeling_PAR2.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../cw_flash_photolysis/attenuation_modeling_PAR2.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -160,20 +161,17 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="attenuation_modeling_funcs2" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="attuation_fitting (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="cw_flash_photolysis" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/../cw_flash_photolysis" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/attenuation_modeling_funcs2.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../cw_flash_photolysis/attuation_fitting.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="true" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -287,13 +285,25 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.attenuation_modeling_PAR2 (1)" />
+        <item itemvalue="Python.attuation_fitting (1)" />
         <item itemvalue="Python.attuation_fitting" />
         <item itemvalue="Python.scratch" />
         <item itemvalue="Python.attenuation_modeling_PAR" />
-        <item itemvalue="Python.attenuation_modeling_PAR2" />
-        <item itemvalue="Python.attenuation_modeling_funcs2" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -310,7 +320,7 @@
       <workItem from="1585666549376" duration="25611000" />
       <workItem from="1585828389884" duration="3767000" />
       <workItem from="1585839160605" duration="267000" />
-      <workItem from="1585839474575" duration="8679000" />
+      <workItem from="1585839474575" duration="15745000" />
     </task>
     <task id="LOCAL-00001" summary="new_project">
       <created>1586174151372</created>
@@ -326,7 +336,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586174180673</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="new_project">
+      <created>1586360992217</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1586360992217</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -345,10 +362,11 @@
       <screen x="35" y="27" width="1885" height="1053" />
     </state>
     <state x="193" y="185" width="1084" height="709" key="#com.intellij.execution.impl.EditConfigurationsDialog/35.27.1885.1053/1920.0.1920.1080@35.27.1885.1053" timestamp="1585228487886" />
-    <state x="2498" y="142" width="754" height="803" key="CommitChangelistDialog2" timestamp="1586174180575">
-      <screen x="1920" y="0" width="1920" height="1080" />
+    <state x="602" y="165" width="754" height="803" key="CommitChangelistDialog2" timestamp="1586360992046">
+      <screen x="35" y="27" width="1885" height="1053" />
     </state>
     <state x="2498" y="142" width="754" height="803" key="CommitChangelistDialog2/35.27.1885.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1586174180575" />
+    <state x="602" y="165" key="CommitChangelistDialog2/35.27.1885.1053/1920.0.1920.1080@35.27.1885.1053" timestamp="1586360992046" />
     <state x="2412" y="295" width="424" height="517" key="FileChooserDialogImpl" timestamp="1586174108897">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
@@ -379,10 +397,11 @@
     </state>
     <state x="530" y="83" width="977" height="737" key="SettingsEditor/35.27.1885.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1585839636022" />
     <state x="497" y="186" width="977" height="737" key="SettingsEditor/35.27.1885.1053/1920.0.1920.1080@35.27.1885.1053" timestamp="1585264587210" />
-    <state x="2475" y="276" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1586174193224">
-      <screen x="1920" y="0" width="1920" height="1080" />
+    <state x="580" y="296" width="800" height="535" key="Vcs.Push.Dialog.v2" timestamp="1586361087967">
+      <screen x="35" y="27" width="1885" height="1053" />
     </state>
     <state x="2475" y="276" width="800" height="535" key="Vcs.Push.Dialog.v2/35.27.1885.1053/1920.0.1920.1080@1920.0.1920.1080" timestamp="1586174193224" />
+    <state x="580" y="296" width="800" height="535" key="Vcs.Push.Dialog.v2/35.27.1885.1053/1920.0.1920.1080@35.27.1885.1053" timestamp="1586361087967" />
     <state x="735" y="401" width="474" height="311" key="cloudConfig.SelfSettingsDialog" timestamp="1585587843278">
       <screen x="35" y="27" width="1885" height="1053" />
     </state>

@@ -56,6 +56,7 @@ def model(ED, phi, width, sig, tstep, tmax, N0, residual):
 	N = np.empty_like(z)
 	I0 = ED * 100 / 4.42e-16 * tstep
 	t = np.empty(int(tmax / tstep))
+	thermal = np.empty_like(z)
 
 	for i in enumerate(t):
 		t[i[0]] = tstep
@@ -65,19 +66,24 @@ def model(ED, phi, width, sig, tstep, tmax, N0, residual):
 
 	for k in enumerate(t):
 		Intergral = 0
+		therm_Intergral = 0
 		for i in enumerate(z):
 			if i[0] == 0:
 				# print('This is ',I0)
 				I[i[0]] = I0
 				N[i[0]] = 0
+				thermal[i[0]]=  0
 			# Intergral=0
 			else:
 				N[i[0]] = Ni[i[0]] - phi * delI(Ni[i[0]], i[1], I[i[0] - 1], sig, width)
 				I[i[0]] = I[i[0] - 1] - (z[i[0]] - z[i[0] - 1]) * delI(Ni[i[0]], i[1], I[i[0] - 1], sig, width)
+				thermal[i[0]]= (1-phi) * delI(Ni[i[0]], i[1], I[i[0] - 1], sig, width)
+				therm_Intergral = therm_Intergral + trap(z[i[0] - 1], z[i[0]], thermal[i[0] - 1], thermal[i[0]])
+
 				Intergral = Intergral + trap(z[i[0] - 1], z[i[0]], N[i[0] - 1], N[i[0]])
 		Ni = N
 	print('Conversion:', 1 - Intergral / N0)
-	return (1 - Intergral / N0) -residual#, ED
+	return (1 - Intergral / N0) -residual, ED, therm_Intergral
 
 # plt.plot(z,Integral)
 # plt.plot(z, Ni, label='Ni')
