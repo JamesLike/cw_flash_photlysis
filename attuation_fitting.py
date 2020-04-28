@@ -1,18 +1,17 @@
 import attenuation_modeling_funcs2 as amf
-import multiprocessing as mp
 import numpy as np
 from matplotlib import pyplot as plt
 from scipy.optimize import curve_fit
 
-print("Number of processors: ", mp.cpu_count())
 width = 1.0
 N0 = 1.20e15  # sample per cm-2
 sig = 1.47e-16  # cross section per cm-2
-phi = 0.3  # quantum yeidld of converstion
+phi = 0.29#0.3  # quantum yeidld of converstion
 tstep = 1e-3  # In Seconds
 tmax = 20e-3  # in seconds
-residual = 0.1
-dat = np.loadtxt('/home/james/Documents/code/flash_dat2.dat')
+residual = 0.05
+#dat = np.loadtxt('/home/james/Documents/code/flash_dat2.dat')
+dat = np.loadtxt('/home/jdv19778/Documents/modeling/final.dat')
 
 
 sig = np.zeros(len(dat))
@@ -26,8 +25,11 @@ for i in enumerate(dat):
 def fitting_model(ED, phi, residual):
 	val = np.empty_like(ED)
 	for EDi in enumerate(ED):
-		val[EDi[0]] = amf.model(EDi[1], phi, 1,    1.47e-16, 1e-3, 20e-3, 1.20e15, residual)
+		tmp = amf.model(EDi[1], phi, 1,    1.47e-16, 1e-3, 20e-3, 1.20e15, residual)
+		#val[EDi[0]] = amf.model(EDi[1], phi, 1,    1.47e-16, 1e-3, 20e-3, 1.20e15, residual)
 		#						E       phi  width sig       tstep tmax   N0
+		val[EDi[0]] = tmp[0]
+
 	return val
 
 

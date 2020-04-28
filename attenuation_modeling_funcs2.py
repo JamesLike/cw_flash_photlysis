@@ -49,12 +49,12 @@ def I0_rate(ED):
 # tmax = 20e-3  # in seconds
 
 def model(ED, phi, width, sig, tstep, tmax, N0, residual):
-	#print(ED)
-	z = np.linspace(-0.1, 1.1, 1000)
+	z = np.linspace(-0.1, 1.1, 10000)
 	Ni = np.empty_like(z)
 	I = np.empty_like(z)
 	N = np.empty_like(z)
 	I0 = ED * 100 / 4.42e-16 * tstep
+	# 192.33 mJ/mm2 is the unattenuated ..
 	t = np.empty(int(tmax / tstep))
 	thermal = np.empty_like(z)
 
@@ -83,7 +83,7 @@ def model(ED, phi, width, sig, tstep, tmax, N0, residual):
 				Intergral = Intergral + trap(z[i[0] - 1], z[i[0]], N[i[0] - 1], N[i[0]])
 		Ni = N
 	print('Conversion:', 1 - Intergral / N0)
-	return (1 - Intergral / N0) -residual, ED, therm_Intergral
+	return (1 - Intergral / N0) -residual, ED #, therm_Intergral
 
 # plt.plot(z,Integral)
 # plt.plot(z, Ni, label='Ni')
