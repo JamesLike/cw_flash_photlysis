@@ -28,7 +28,7 @@ def I0_rate(ED):
 	return ED * 100 / 4.42e-16  # *10e-3 #Intensity per cm2 per s
 
 
-def model(ED, phi, width, sig, tstep, tmax, N0):
+def model(ED, phi, width, sig, tstep, tmax, N0):\
 	dI0dt = I0_rate(ED)
 	z = np.linspace(-0.1, 1.1, 100)
 	t = np.empty(int(tmax / tstep))
